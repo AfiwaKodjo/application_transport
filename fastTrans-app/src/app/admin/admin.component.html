@@ -1,0 +1,24 @@
+<div style="text-align:center; color: beige;">
+    <h1>
+      Bienvenue super administrateur!
+    </h1>
+    </div>
+    <div class="ville">
+      <h1 class="text-center" style="color: beige;"> Page Admin </h1>
+      <div class="container">
+    <h2>Gestion des quartiers</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th style="color:whitesmoke">Quartiers</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let quartier of quartiers" >
+                <td style="color:beige">{{quartier.nom}}</td>
+    
+            </tr>
+        </tbody>
+    </table>
+      </div>
+    </div>

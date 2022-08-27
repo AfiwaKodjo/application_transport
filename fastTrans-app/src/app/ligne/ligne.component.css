@@ -1,0 +1,14 @@
+.ligne{
+
+    background: rgba(0, 0, 0, 0.7) url('../../assets/images/orleans-bd.jpg');
+    height: 600px;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+   
+}
+
+tr td {
+    color:white;
+}

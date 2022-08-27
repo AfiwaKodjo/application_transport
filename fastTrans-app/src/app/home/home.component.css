@@ -1,0 +1,45 @@
+.ecran{
+
+    background-image: url('../../assets/images/photo1.jpg');
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    animation: animate 15s ease-in-out infinite;
+}
+
+@keyframes animate {
+
+    50%{
+        background-image: url('../../assets/images/photo4.jpg');
+    }
+    
+}
+
+.content{
+
+    top: 35%;
+    left: 20%;
+    position: absolute;
+}
+
+.content h1{
+
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+   
+}
+
+.content a{
+
+    text-decoration: none;
+    background-color: #fff;
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.content a:hover{
+    background-color: var(blue);
+    color: rgb(18, 118, 158);
+}

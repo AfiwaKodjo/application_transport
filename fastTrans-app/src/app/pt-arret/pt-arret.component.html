@@ -1,0 +1,56 @@
+<!--nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand">FastTrans</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="">Lignes de transport</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="#">Points d'arrêt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" routerLink="/quartierList" tabindex="-1" aria-disabled="false">Quartiers disponibles</a></li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" (ngModelChange)="searchQuartiers(key.value)" #key="ngModel" ngModel
+              name="key" id="searchName" type="search" placeholder="Rechercher" aria-label="Search">
+            <button class="btn btn-outline-success text-white" type="submit">Soumettre</button>
+              <input type="search" (ngModelChange)="searchQuartiers(key.value)" #key="ngModel" ngModel
+              name="key" id="searchName" class="form-control mr-sm-2"  placeholder="Rechercher" aria-label="Search">
+          </form>
+        </div>
+      </div>
+    </nav-->
+<div class="arret">
+<h1 class="text-center" style="color: bisque;"> FastTrans-app </h1>
+<div class="container">
+  <h2 style="color: beige;">Liste des points d'arrêt disponibles</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th style="color: bisque;">Nom des points d'arrêt</th>
+        <th style="color: bisque;">Quartiers</th>
+        <th style="width: 30%">
+          <form class="d-flex">
+            <input class="form-control me-2" (ngModelChange)="searchPtArrets(key.value)" #key="ngModel" ngModel
+              name="key" id="searchName" type="search" placeholder="Rechercher" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Soumettre</button>
+          </form>
+        </th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let ptArret of ptArrets">
+        <td>{{ptArret.nom}}</td>
+        <td>{{ptArret.quartier.nom}}</td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>

@@ -1,0 +1,21 @@
+<div class="col-md-6 offset-md-3" >
+<div style="text-align:center; color: beige;" >
+    <h3>
+      Ajout quartier
+    </h3>
+</div>
+<form (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+        <label style="color: beige;">Nom</label>
+        <input type="text" class="form-control" id="nom"
+        [(ngModel)]="quartier.nom"  name="nom" >
+
+    </div>
+    <br/>
+<button class="btn btn-success" type="submit">Soumettre</button>
+<button class="btn btn-danger" type="reset">Annuler</button>
+
+
+</form>
+</div>

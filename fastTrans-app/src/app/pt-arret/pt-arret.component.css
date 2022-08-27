@@ -1,0 +1,13 @@
+.arret{
+
+    background: rgba(0, 0, 0, 0.7) url('../../assets/images/photo12.jfif');
+    height: 600px;
+    background-position: center;
+    /*background-size: cover;*/
+    background-blend-mode: darken;
+   
+}
+
+tr td {
+    color:white;
+}

@@ -1,0 +1,66 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand">FastTrans</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link active text-white" routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Accueil</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link active text-white" routerLink="lignes" routerLinkActive="active-link" >Lignes de transport</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-white" routerLink="pt-arrets" routerLinkActive="active-link">Points d'arrêt</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-white" routerLink="quartiers"  routerLinkActive="active-link" >Quartiers disponibles</a></li>
+      </ul>
+      <!--form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
+        <button class="btn btn-outline-success text-white" type="submit">Soumettre</button>
+      </form-->
+      <!--form class="d-flex">
+        <input class="form-control me-2" (ngModelChange)="searchQuartiers(key.value)" #key="ngModel" ngModel
+          name="key" id="searchName" type="search" placeholder="Rechercher" aria-label="Search">
+        <button class="btn btn-outline-success text-white" type="submit">Soumettre</button>
+          <input type="search" (ngModelChange)="searchQuartiers(key.value)" #key="ngModel" ngModel
+          name="key" id="searchName" class="form-control mr-sm-2"  placeholder="Rechercher" aria-label="Search">
+      </form-->
+    </div>
+  </div>
+</nav>
+<div class="">
+<router-outlet></router-outlet>
+</div>
+<section class="bas" style="position:fixed; bottom:0; left: 0; right:0">
+  <!-- Footer -->
+  <footer class="text-center text-white" style="background-color: #1672c9; position:fixed; bottom:0; left: 0; right:0">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: CTA -->
+      <!--section class="">
+        <p class="d-flex justify-content-center align-items-center">
+          <span class="me-3">Register for free</span>
+          <button type="button" class="btn btn-outline-light btn-rounded">
+            Sign up!
+          </button>
+        </p>
+      </section-->
+      <!-- Section: CTA -->
+    </div>
+    <!-- Grid container -->
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(22, 25, 175, 0.2);">
+      © 2022 Copyright:
+      <a class="text-white" href="afiwakodjo010@gmail.com">FastTrans-app.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</section>
+

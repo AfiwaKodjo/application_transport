@@ -1,0 +1,28 @@
+<h3 style="color:beige; text-align: center;">Détails des lignes de transport</h3>
+<div style="color:bisque; text-align: center;">
+    <div >
+        <label><b>Nom: </b></label> {{ligne.nom}}
+    </div>
+    <br/>
+    <div>
+        <label><b>Départ: </b></label> {{ligne.depart}}
+    </div>
+    <br/>
+    <div>
+        <label><b>Terminus: </b></label> {{ligne.terminus}}
+    </div>
+<br/>
+    <ng-container>
+        <label><b>Points d'arrêt: </b></label>
+    <div *ngFor="let ptArret of ligne.ptArrets">
+         {{ptArret.nom}}
+    </div>
+</ng-container>
+<br/>
+<ng-container>
+    <label><b>Quartiers: </b></label>
+    <div *ngFor="let ptArret of ligne.ptArrets">
+         {{ptArret.quartier.nom}}
+    </div>
+</ng-container>
+</div>
